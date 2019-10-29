@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cis4339Hm3Nested</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <div id="header">
+      <h1>Appointment Manager</h1>
+      <div id="navigation">
+        <%= link_to 'Physicians', physicians_path %>
+        <%= link_to 'Appointments', appointments_path %>
+        <%= link_to 'Patients', patients_path %>
+      </div>
+    </div>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
